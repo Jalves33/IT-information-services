@@ -1,0 +1,101 @@
+ n ###install git
+
+
+
+###Setting up username and e-mail to keep track of who is checking in and making changes
+git --global user.name "name"
+git --global user.email "email"
+
+
+###Getting help with git commands
+get help config
+git config --help
+git add --help
+
+###Initialize a repository from exisiting code
+# what it does is place a .get file in your present directory to teack your projects
+git init
+
+###stop tracking your projects just remove the .git file
+rm -rf .git
+
+### checking what is in stage, what is ready to be commited, what is being tracked or not, etc.
+git status
+
+###the stage area is where you organize what we want to be commited to the .git repository.
+
+###commits are files that you have pushed from the staging area to the .git repository
+
+
+####creating a .gitignore file to have git ignore certain files
+touch .gitignore
+to create a file and add file names into the file to list the files you want ignored
+
+###add files to the staging area
+git add -A     adds all files to the stage area
+git add <filename>    adds that specific file
+
+###remove a file from the staging area and removing all files from the stage area
+
+git reset <filename>
+git reset
+
+###commiting files with a message. A message is important to identify what changed and what is being done
+
+git commit -m  "message"
+
+###checking logs to see who did what, what time, etc
+git log
+
+###cloning a repository to your local repository
+git clone <url> <where you want the files>
+for example clone https://www.github.com/user/repository </home/user/directory) 
+
+###viewing information about the remote repository
+git remote -v
+
+#list the all the branches in the repository and local repo
+git branch -a
+
+###showing the changes in your code
+git diff
+
+###Pulling from the repository any changes that have been made since your last pull
+##orgin is just he name of the remote repository and master is the branch you want to push to
+git pull origin master
+
+###pushing you changes to the repository
+git push origin master
+
+###creating a branch for a desired feature
+git branch <branchName>
+
+###listing the local branches
+git branch
+
+###moving to a different branch to work on
+git checkout <branchName>
+
+#affter commiting pushing branch to remote repo
+git push -u origin <newbranch>
+
+###merge a branch
+switch to the master branch using git ehckout master
+always a good idea to pull first to make sure your uptodate
+
+###check what has been merged
+git branch --merged
+
+###merge a branch into the branch your workign in
+git merge <branchName>
+
+###pushing to remote repo
+git push origin master
+ 
+###delete a branch locally
+git brnach -d <branchName>
+
+###delete remote branch
+git push origin --delete <branchName>
+
+
