@@ -1,0 +1,88 @@
+### Using editors vi, nano, Emac
+
+Nano filename
+Brings you to the editor nano, it is an easy file editor to use but not as powerful as vi
+ctrl^g for help
+
+
+### vi
+vi filename    Brings you to the editor vi
+
+vim filename   is the same as vim but has more features
+
+view file      starts vim in read only mode
+
+k 	up one character
+j 	down one character
+h 	left one character
+l 	right one character 
+
+w	right one word
+b	left one word
+*	Go to the beginning of the line
+$	Go to the end of the line
+
+### vi Insert Mode
+After pressing the esc button press
+i	insert at the cursor position
+I	insert at the beginning of the line
+a	append after the cursor position
+A	append at the end of the line
+
+### vi Line Mode
+After pressing the esc button press
+
+:w	saves (writes) the file
+:w!	force save the file
+:q	quit
+:q!	force quit
+:wq!	save and quit
+:x	same as :wq but shorter to write
+:n	puts the cursor at line n
+:$	puts the cursor at the last line
+:set nu		turn on line numbering
+:set nonu	turns it off
+
+:help [subcommand] 	get help
+
+### vi Reapting commands
+10k	move up a line 10 times
+10j	move down a line 10 times
+10l	move right 10 spaces
+10h	move left 10 spaces
+(numbers depend on were you want to move)
+
+20i<text><ESC> = Insert<text>20 times
+20i_<EXC>=Insert 20 "_" characters
+
+### vi deleting text
+
+x	delete a character
+dw	delete a word
+dd	delete a line
+D	delete from the current position
+
+### vi replacing text
+
+r	replace the current character
+cw	change the current word
+cc	change the current line
+c$	change the text from the current position
+C	Same as c$
+~	reserves the case(uppercase/lowercase)) of a character
+
+### vi copying and pasting
+
+yy		copy the current line
+y<position> 	copy the position
+p		paste the most recent deleted or copied text
+
+### vi undo/redo
+u	undo
+ctrl-R	redo
+
+### vi searching
+/<pattern>	start a forward search
+?<pattern>	start a reverse search
+
+### tutor mode you can run the vim tutor in your terminal to launch a vim tutor for practice.

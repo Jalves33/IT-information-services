@@ -1,0 +1,72 @@
+#The linux Directory Structure
+#Summary of the most common Directories
+# / ("Root") the top of the file system Hierarchy
+# /bin Binaries( machine code) and other executable programs
+# /etc system configuration files (controls system config files or how other programs work)
+# /home Home of directories
+# /opt Optional or third party software such as google chome or google earth
+# /tmp temporary space, typically cleared on reboot ( not a good idea to put imporant files here)
+# /usr user related programs
+# /var variable data, for example log files
+
+#Third party software such as google is usually either installed in /opt or user/local
+#/opt/google
+#/usr/local/google
+
+#Sometimes third party programs could install in the opt directory with their bin and lib directories
+#but could install the config files in etc/opt/google and the log files in /var/opt/google
+
+
+#A more comprehensive Directoies list
+
+#/cdrom Mount point for CD-ROMs
+
+#/cgroup control groups hierarchy
+
+#/dev devices files, usually controlled by the OS and the system admins
+
+#/export SHare file systems
+
+#/lib system libraries
+
+#/lib64 system libraries, 64bit
+
+#/lost+found Used by the file system to store recovered files after
+#a file sustem check has been perfored.
+
+#/media used to mount removable media like DR-ROMs.
+
+#/mnt Used to mount external file systems
+
+#/proc Provides info about running processes.
+
+#/root the home directory for the root account.
+
+#/sbin System admin binaries
+
+#/selinux Used to display info about SELinux.
+
+#/srv Contains data which is served by the system
+
+#/srv/www Web server files
+
+#/srv/ftp FTP files
+
+#/sys Used to display and sometimes configure the devices known to the Linux Kernel.
+
+#/usr/bin Binaries and other executable programs
+
+#/usr/lib Libraries
+
+#/user/local Locally sintalled software that is not part of the base operationg system.
+
+#/usr/sbin System admin Binaries
+
+#/var/log Log files
+
+#/usr/local/programName/(bin,lib,log,etc)
+
+#Sometimes third party programs could install in the opt directory with their bin and lib directories
+#but could install the config files in etc/opt/(programanme) and the log files in /var/opt/ProgamName)
+
+

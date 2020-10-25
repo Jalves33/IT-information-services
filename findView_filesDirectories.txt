@@ -1,0 +1,42 @@
+### Finding files and Directories
+
+### The find command
+find (path) (expression)
+
+Recuresively finds files in path that match expression. 
+If no arguments are supplied it will find all files in the current dir.
+
+OPTIONS
+
+-name      pattern find files and dir that match pattern
+-iname     pattern Like name but ignores case
+-ls        performs and ls on each of the found items
+-mytime   days fines files that are days old
+-size      num finds file that are of size num
+-newer     file finds files that are newer than file
+
+
+RUN command against all the files that are found use -exec and end with {} \;
+-exec command {} \;
+
+
+Running the find command by itself it will run trhough your present working directory
+
+
+File command tells you what kind of file you have
+file myfile.txt
+
+### locate command
+locate pattern
+
+
+### View FIles in Real Time
+tail -f file      follow the file
+Displays data as it is being written to the file in real time
+
+head command allows you to view the top 10 lines in a file
+tail does the oppisite the bottom 10 lines
+
+you can you minus options to change the parameters
+
+head -2 file name would show the top 8 lines of the file

@@ -1,0 +1,66 @@
+###Permissions
+
+drwxr-xr-x. 2 jalves jalves    6 Aug 30 16:18 Desktop
+^^^^^^^^^^^
+
+r = read and has a numeric value of 4
+w = write and has a numeric value of 2
+x = execute and has a numeric value of 1
+
+When r is applied to a file it allows the file to be read and when to a directory
+it allows the files in the directory to be read
+
+when w os applied to a file it allows the file to be modified when it is applied to 
+directory it allows the modification of the contents of the dir
+
+when x is applied to a file it allows for the execution of that file and when to a dir it allows
+access to conents and metadata for entries
+
+###Symbols
+
+u = user
+g = groups
+o = other
+a = all
+
+
+###Groups
+
+Every user belongs to at least one group but can belong to many
+groups - displays a users groups
+id -Gn    Does the same
+groups (username) - displays that users	groups
+
+
+###Changing Permissions
+chmod - change mode command
+u g o a    are categories (u, user g, group o, other a, all)
+=-+ equals, subtract, add is used to set permissions
+rwx is again Read Write Execute
+
+chmod using equals gives exactly what you put and putting nothing after = means no permissions.
+for example    chmod u=rwx, o= myfile.txt      will give the user read write and execute permissions.
+and give others no permissions
+
+you can use chmod with numeric characters
+each number is represents the total value of the persions
+7= r(4)+w(2)+x(1)
+6= r+w
+5=r+x 
+4=r
+3=w+x
+2=w
+1=r
+
+744 = -rwxr--r--
+700 = -rwx------
+
+chmod 744 myfile.txt    will change the file perssions to -rwxr--r-- which is read write execute
+permissions for the user, read permissions for the group, and read permissions for other.
+
+### The umask Command
+umask (-S) (mode)
+
+Sets the file creation mask to mode, if given
+Use -S to for symbolic notation.
+

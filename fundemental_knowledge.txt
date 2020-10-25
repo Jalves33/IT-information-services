@@ -1,0 +1,121 @@
+#####What is the Shell
+
+It is the command line interface, a program that takes the command you type and executes them
+It is also refered to as the command line interpreter
+It can be more powerful than the GUI, tasks can be done alot faster
+Most server distros do not include GUI, Desktop have both
+
+
+
+###The Prompt
+$ prompt signifies a normal user were a # signifies a superuser like root which can do anything
+
+~ represents home So ~ would be /home/jalves
+
+
+
+
+###Basic commands
+
+ls - lists directory contents
+
+cd - change directory
+. represents this directory .. represents the above directory
+
+pwd -  present working dir
+cat - Concatenates and displays files
+echo - Displays arguments to the screen
+
+man - Displays the online manual to commands
+Press Enter to move down one lines Space to move down one page
+Press g to move to the top of the page G to the bottom and q to quit
+man -k SEARCH_TERM to search for man pages
+
+Use --help or -help to get help with a command for example cal --help
+
+
+exit - exits the shell or your current session
+clear - Clears the screen
+
+Which - locate a command
+if there are multiple paths to a command then the first one reached will be executed
+
+
+
+
+###Environmental Variables
+
+storage location that has a name and a value. it is typically in uppercase
+Acess the conents by executing: echo $VAR_NAME
+
+#$PATH
+
+contains an environment variable
+controls the command search path
+contains a list of dir
+
+
+$OLDPWD - holds the directory that you previous were in
+
+###Executing Commands
+$PATH determines command search path
+you can specify a command with a full path
+you can execute command not in $PATH by 
+./command = execute command in this dir
+
+
+###Creating and removing Directories
+mkdir - creates a directory
+mkdir -p - creates a directory within a directory e.g mkdir -p test/sales/dept
+rmdir - Removes a directory
+rm -rf directory - Recurseively (the directory and all the dir and files in it) removes the directory
+Remember once deleted its gone forever!
+
+###Understanding the ls command
+
+Permissions      Number of links  Owner  Group  byte size   Last Modification time       filename
+drwxr-xr-x.             2         jalves jalves    6              Aug 30 16:18            Desktop
+
+
+hidden files start with a period and are not displayed by default
+ls -a shows hidden files and can be combined with other options like -l(long list)
+ls -la will display the conents of the directory in long formation along with hidden files
+can be written ls -a -l     or   ls -lar      both do the same
+-F option reveals fire types /Directory @Link *Executable
+-t option list files by time
+-r option list files in reverse order
+-lart option will list all the files by time in reverse order
+-R option lists files recursively
+-d option lists only the directories
+--color will coloize the output
+
+
+###Symbolic Links
+a link points to the actual file or dir
+you use the link as it were the file
+a link can be used to create a shortcut and is usualled used for long files and dir
+it is also used to signal that the file or dir is the current version of sotware
+
+
+###The tree Command
+
+is like the ls command but creates a visual output
+
+tree -d list directories only
+tree -C coloizes the ouput
+
+###Tips and Tricks
+
+Do NOTE uses Sspaces in file names or dirctories
+
+Use - or _ capitalizethe first letter of each word e.g ThisIsMyFileNameRightHereSee
+
+When working with spaces in dir or file names you can use quotes on both ends to escape
+For example "this is my file with sapces i should not have made.txt"
+
+You can also use the backslash symbol to escape spaces
+for example this\ is\ my\ file\ name
+
+
+
+

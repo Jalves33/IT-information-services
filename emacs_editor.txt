@@ -1,0 +1,15 @@
+### Emacs editor
+
+emacs <file>	edit file
+
+using commands
+ctrl-<char>	ctrl while pressing <char>
+alt-<char>	alt while pressing <char>
+atl-<char>	esc, then type <char>
+
+c-h and c-c	help
+c-x and c-s	exit
+c-h t 		built in tutorial
+c-h k <key>	describes the key
+
+
